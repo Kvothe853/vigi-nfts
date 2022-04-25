@@ -91,9 +91,6 @@
     }
   }
   main {
-    .hero {
-      min-height: 520px;
-    }
     .companies-container {
       div {
         &:nth-child(4) {
@@ -133,6 +130,11 @@
 
   footer {
     .sub-footer {
+      .footer-social-wrapper {
+        i {
+          font-size: 2rem;
+        }
+      }
       .footer-links {
         .footer-box {
           margin-left: 5rem;

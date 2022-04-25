@@ -676,9 +676,6 @@ footer .footer-bottom div:last-child {
   nav .main-menu .menu-links.hidden-menu {
     left: 0;
   }
-  main .hero {
-    min-height: 520px;
-  }
   main .companies-container div:nth-child(4) {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -710,6 +707,9 @@ footer .footer-bottom div:last-child {
     height: 400px;
     position: block;
     z-index: 999;
+  }
+  footer .sub-footer .footer-social-wrapper i {
+    font-size: 2rem;
   }
   footer .sub-footer .footer-links .footer-box {
     margin-left: 5rem;
