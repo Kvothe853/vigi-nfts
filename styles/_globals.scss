@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  // ----- Colours
+  --dark1: #111;
+  --dark2: #555;
+  --dark3: #777;
+  --dark4: #999;
+  --light1: #fff;
+  --light2: #eee;
+  --light3: #ccc;
+  --orange: #ff8139;
+  // --pink: #ff3998;
+  --pink: #ff3998;
+  --green: #39ffa0;
+  --red: #ff3939;
+
+  // ----- Sizes
+  --text-size: 1.4rem;
+}
+
+// Mixins
+
+@mixin flexboxMixin($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  min-width: 380px;
+  // @include flexboxMixin(column, flex-start, center);
+}
+
+a,
+li,
+div,
+label,
+input,
+span,
+p {
+  font-size: var(--text-size);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark2);
+}

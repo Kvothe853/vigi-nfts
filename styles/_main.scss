@@ -1,0 +1,270 @@
+main {
+  // Hero section
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  .hero {
+    padding: 2rem 3rem;
+    overflow: hidden;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      color: #ff3998;
+      text-transform: uppercase;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      margin: 3rem 0;
+    }
+    h1 {
+      font-size: 4.6rem;
+      margin: 3rem 0;
+      font-weight: 800;
+    }
+    p {
+      max-width: 65%;
+      font-size: 2.2rem;
+      margin: 3rem 0;
+    }
+
+    img {
+      position: absolute;
+      right: -250px;
+      bottom: 0;
+      height: 500px;
+    }
+
+    button {
+      font-size: 2rem;
+      padding: 1.8rem 4rem;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 5rem;
+      align-self: flex-start;
+      background: linear-gradient(
+        45deg,
+        var(--pink),
+        red,
+        var(--orange),
+        var(--orange),
+        var(--orange),
+        #cab16d
+      );
+      &::before {
+        content: "Sign up";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        height: 89%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        background-color: #fff;
+      }
+      &:hover {
+        &::before {
+          color: #333;
+        }
+      }
+    }
+  }
+
+  // Sign-up Section
+  .sign-up-container {
+    background: linear-gradient(70deg, #ff7583, #f57f51, #d4bb85);
+    // background-image: url("../images/background.svg");
+    display: flex;
+    flex-direction: column;
+    padding: 12rem 3rem 3rem;
+    h2 {
+      font-size: 3.6rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 2.2rem;
+      margin: 2rem 0 0;
+    }
+  }
+
+  // Companies container
+  .companies-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem 3rem 3rem;
+    div {
+      display: flex;
+      width: 50%;
+      justify-content: flex-start;
+      margin-bottom: 3rem;
+      &:nth-child(even),
+      &:last-child {
+        justify-content: flex-end;
+      }
+      &:nth-child(4) {
+        display: none;
+      }
+      img {
+        height: 34px;
+      }
+    }
+  }
+
+  // NFT'S Container
+  .auction-container {
+    padding: 0 3rem;
+    h2 {
+      font-size: 3.6rem;
+      font-weight: 600;
+    }
+    p {
+      margin: 1rem 0 3rem;
+      font-size: 1.7rem;
+      color: var(--dark3);
+      a {
+        font-size: 1.8rem;
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+    .nfts-container {
+      display: flex;
+      overflow: hidden;
+      padding: 3rem 0;
+      .box {
+        max-width: 290px;
+        margin-right: 2rem;
+        width: 100%;
+        border-radius: 15px;
+        background-color: var(--light2);
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+        color: var(--dark3);
+        img {
+          margin-bottom: 1rem;
+        }
+        div {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 1rem;
+          margin: 0.2rem 0;
+        }
+        .nfts-categories {
+          text-transform: uppercase;
+          div {
+            font-size: 1rem;
+            &:first-child {
+              color: var(--orange);
+            }
+          }
+        }
+        .nfts-info {
+          color: #000;
+          font-weight: bold;
+          div {
+            font-size: 1.7rem;
+            &:last-child {
+              @include flexboxMixin(row, flex-end, center);
+              i {
+                margin-right: 0.3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .second-hero {
+    border-bottom: solid 1px var(--light2);
+    border-top: solid 1px var(--light2);
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 100%;
+    img {
+      right: -40px;
+      height: 400px;
+      z-index: -1;
+    }
+    button {
+      margin-bottom: 0;
+    }
+  }
+
+  .main-hero {
+    padding: 2rem 3rem;
+    overflow: hidden;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      color: #ff3998;
+      text-transform: uppercase;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      margin: 3rem 0;
+    }
+    h1 {
+      font-size: 4.6rem;
+      margin: 3rem 0;
+      font-weight: 800;
+    }
+    p {
+      max-width: 65%;
+      font-size: 2.2rem;
+      margin: 3rem 0;
+    }
+
+    img {
+      position: absolute;
+      right: -250px;
+      bottom: 0;
+      height: 500px;
+    }
+
+    button {
+      font-size: 2rem;
+      padding: 1.8rem 4rem;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 5rem;
+      align-self: flex-start;
+      background: linear-gradient(
+        45deg,
+        var(--pink),
+        red,
+        var(--orange),
+        var(--orange),
+        var(--orange),
+        #cab16d
+      );
+      &::before {
+        content: "Sign up";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        height: 89%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        background-color: #fff;
+      }
+      &:hover {
+        &::before {
+          color: #333;
+        }
+      }
+    }
+  }
+}
